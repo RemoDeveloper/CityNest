@@ -38,7 +38,7 @@
 .search-bar {
   background-color: white;
   border-radius: 5px;
-  border: 3px solid rgba(120, 120, 120, 0.374);
+  border: 3px solid rgba(133, 131, 131, 0.247);
   padding: 0.5rem 1rem;
   width: 100%;
   justify-content: space-between;
@@ -72,6 +72,12 @@
     height: 100%;
 }
 
+
+.secondaryText {
+  color: #180801ee; /* Light brown with transparency */
+  font-size: 1.rem;
+  font-weight: 500;
+}
 /* mobile screens */
 @media  (max-width: 640px){
   .hero-container{

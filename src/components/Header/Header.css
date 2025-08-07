@@ -6,12 +6,14 @@
 .h-container {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  color: var(--secondary);
+  color: rgb(26, 22, 22); 
+  font-weight: 800;
+  font-size: 1.8rem;
   justify-content: space-between;
 }
 
 .h-menu {
-  gap: 2rem;
+  gap: 2.2rem;
 }
 .h-menu > *:hover {
   cursor: pointer;
@@ -20,24 +22,43 @@
   display: none;
 }
 
+.h-menu > *:hover {
+  cursor: pointer;
+  background-color: rgba(136, 88, 0, 0.103); /* light orange bg */
+  
+ 
+  transition: background-color 0.3s ease;
+}
+ .button{
+    color: skyblue;
+    font-size: 1.6rem;
+    padding: 0.6rem 1.4rem;
+    color: rgba(226, 226, 103, 0.863);
+    font-weight: 800;
+  }
+
+
 @media (max-width: 768px) {
   .menu-icon {
     display: block;
   }
   .h-menu {
-    color: var(--black);
+    color: white-smoke;
     position: absolute;
     gap: 2rem;
     font-weight: 500;
     flex-direction: column;
     right: 4rem;
     top: 3rem;
-    background: rgba(175, 173, 173, 0.815);
+    background: rgba(230, 230, 230, 0.973);
     display: flex;
     border-radius: 10px;
     transition: all 200ms ease;
     align-items: flex-start;
     padding: 3rem;
-    box-shadow: 0px 4px 4px rgba(97, 95, 95, 0.795);
+    box-shadow: 0px 4px 4px rgba(235, 233, 233, 0.911);
+  }
+  .button{
+    color: skyblue;
   }
 }

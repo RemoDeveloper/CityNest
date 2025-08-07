@@ -11,8 +11,8 @@ const Footer = () => {
         <div className="footer-left flexColStart">
           <img src="logo-cityNest-01.png" alt="CityNest Logo" />
           <p className="footer-text">
-            Our vision is to make all people <br />
-            the best place to live for them.
+            Our vision is to make every place <br />
+            the best place to live for everyone.
           </p>
         </div>
 
@@ -20,19 +20,20 @@ const Footer = () => {
         <div className="footer-right flexColStart">
           <h4 className="footer-heading">Information</h4>
           <p className="footer-text">Happy Colony, Karve Nagar - 411052</p>
-          <div className="footer-menu">
-            <a href="#">Property</a>
-            <a href="#">Services</a>
-            <a href="#">Product</a>
-            <a href="#">About Us</a>
-          </div>
+          <ul className="footer-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Properties</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </div>
       </div>
 
       {/* Bottom Section */}
       <div className="footer-bottom">
         <p>&copy; {new Date().getFullYear()} CityNest | Real Estate Solutions</p>
-        
       </div>
     </footer>
   );

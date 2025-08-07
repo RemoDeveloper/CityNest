@@ -1,91 +1,57 @@
-import React from "react";
-import "./Contact.css";
-import { MdCall } from "react-icons/md";
-import { BsFillChatDotsFill } from "react-icons/bs";
-import {HiChatBubbleBottomCenter} from 'react-icons/hi2'
+import React, { useState } from 'react';
+import './contact.css';
+
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    mobile: '',
+    message: '',
+  });
+
+  const handleChange = (e) => {
+    setFormData(prev => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Submitted:', formData);
+    alert('Message Sent Successfully!');
+    setFormData({ name: '', email: '', mobile: '', message: '' });
+  };
+
   return (
-    <div id="contact-us" className="c-wrapper">
-      <div className="paddings innerWidth flexCenter c-container">
-        {/* left side */}
-        <div className="flexColStart c-left">
-          <span className="orangeText">Our Contact Us</span>
-          <span className="primaryText">Easy to contact us</span>
-          <span className="secondaryText">
-            We always ready to help by providijng the best services for you. We
-            beleive a good blace to live can make your life better{" "}
-          </span>
-
-          <div className="flexColStart contactModes">
-            {/* first row */}
-            <div className="flexStart row">
-              <div className="flexColCenter mode">
-                <div className="flexStart">
-                  <div className="flexCenter icon">
-                    <MdCall size={25} />
-                  </div>
-                  <div className="flexColStart detail">
-                    <span className="primaryText">Call</span>
-                    <span className="secondaryText">+91 9145829627</span>
-                  </div>
-                </div>
-                <div className="flexCenter button">Call now</div>
-              </div>
-
-              <div className="flexColCenter mode">
-                <div className="flexStart">
-                  <div className="flexCenter icon">
-                    <BsFillChatDotsFill size={25} />
-                  </div>
-                  <div className="flexColStart detail">
-                    <span className="primaryText">Chat</span>
-                    <span className="secondaryText">+91 9145829627</span>
-                  </div>
-                </div>
-                <div className="flexCenter button">Chat now</div>
-              </div>
-            </div>
-
-            {/* second row */}
-            <div className="flexStart row">
-              <div className="flexColCenter mode">
-                <div className="flexStart">
-                  <div className="flexCenter icon">
-                    <BsFillChatDotsFill size={25} />
-                  </div>
-                  <div className="flexColStart detail">
-                    <span className="primaryText">Video Call</span>
-                    <span className="secondaryText">+91 9145829627</span>
-                  </div>
-                </div>
-                <div className="flexCenter button">Video Call now</div>
-              </div>
-
-              <div className="flexColCenter mode">
-                <div className="flexStart">
-                  <div className="flexCenter icon">
-                    <HiChatBubbleBottomCenter size={25} />
-                  </div>
-                  <div className="flexColStart detail">
-                    <span className="primaryText">Message</span>
-                    <span className="secondaryText">+91 9145829627</span>
-                  </div>
-                </div>
-                <div className="flexCenter button">Message now</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        
-
-        {/* right side */}
-        <div className="flexEnd c-right">
-          <div className="image-container">
-            <img src="/values.png" alt="" />
-          </div>
-        </div>
+    <div id="Contact" className="contact-page-wrapper">
+    <div className="contact-page-wrapper">
+      <div className="contact-header">
+        <h1>Contact Us</h1>
+        <p>We would love to hear from you!</p>
       </div>
+
+      <div className="contact-container">
+        <form className="contact-form" onSubmit={handleSubmit}>
+          <h2>Get in Touch</h2>
+          <input type="text" name="name" placeholder="Your Name" value={formData.name} onChange={handleChange} required />
+          <input type="email" name="email" placeholder="Your Email ID" value={formData.email} onChange={handleChange} required />
+          <input type="tel" name="mobile" placeholder="Mobile Number" value={formData.mobile} onChange={handleChange} required />
+          <textarea name="message" rows="4" placeholder="Your Message" value={formData.message} onChange={handleChange} required />
+          <button type="submit">Send Message</button>
+        </form>
+
+        <aside className="contact-map">
+          <iframe
+            title="Google Map Location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.156111496153!2d73.8118797748919!3d18.496260782593873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfb6b6abee15%3A0xf60f9720b95207c1!2sWalchand%20House%2C%20Happy%20Colony%2C%20Warje%20Malwadi%20Rd%2C%20Kothrud%2C%20Pune%2C%20Maharashtra%20411052!5e0!3m2!1sen!2sin!4v1691493204551!5m2!1sen!2sin"
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </aside>
+      </div>
+    </div>
     </div>
   );
 };
