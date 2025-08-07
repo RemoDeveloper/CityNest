@@ -14,7 +14,7 @@ import {
 } from "react-icons/md";
 import data from "../../utils/accordion.jsx";
 import "./Value.css";
-// Demo styles, see 'Styles' section below for some notes on use.
+
 
 const Value = () => {
   return (
@@ -23,7 +23,7 @@ const Value = () => {
         {/* left side */}
         <div className="v-left">
           <div className="image-container">
-            <img src="/public/value.png" alt="" />
+            <img src="value.png" alt="" />
           </div>
         </div>
 

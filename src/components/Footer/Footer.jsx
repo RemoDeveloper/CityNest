@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="footer-container paddings innerWidth flexCenter">
         {/* Left Side */}
         <div className="footer-left flexColStart">
-          <img src="/public/logo-cityNest-01.png" alt="CityNest Logo" />
+          <img src="logo-cityNest-01.png" alt="CityNest Logo" />
           <p className="footer-text">
             Our vision is to make all people <br />
             the best place to live for them.
