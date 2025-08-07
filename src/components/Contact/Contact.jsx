@@ -77,6 +77,8 @@ const Contact = () => {
           </div>
         </div>
 
+        
+
         {/* right side */}
         <div className="flexEnd c-right">
           <div className="image-container">

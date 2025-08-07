@@ -71,11 +71,10 @@ const Hero = () => {
             }}
             className="image-container"
           >
-<<<<<<< Updated upstream
+
             <img src="/hero-image-02.jpg" alt="houses" />
-=======
-            <img src="hero-image-02.jpg" alt="houses" />
->>>>>>> Stashed changes
+
+
           </motion.div>
         </div>
       </div>
