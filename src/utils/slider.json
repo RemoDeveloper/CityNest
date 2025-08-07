@@ -3,36 +3,36 @@
     "name": "Godrej Park Greens",
     "price": "₹47,00,000",
     "detail": "Near Mamurdi, Dehu Road, Pune, Maharashtra 412101",
-    "image": "/r1.png"
+    "image": "/public/r1.png"
   },
   {
     "name": "Kolte Patil Life Republic",
     "price": "₹66,35,000",
     "detail": "Hinjewadi - Marunji Road, Hinjawadi, Pune, Maharashtra 411057",
-   "image": "/r2.png"
+   "image": "/public/r2.png"
   },
   {
     "name": "VTP Pegasus",
     "price": "₹35,85,000",
     "detail": "Kharadi Bypass, Kharadi, Pune, Maharashtra 411014",
-    "image": "/r3.png"
+    "image": "/public/r3.png"
   },
   {
     "name": "Panchshil Towers",
     "price": "₹1,25,00,000",
     "detail": "Eon Free Zone, Kharadi, Pune, Maharashtra 411014",
-    "image": "/r4.png"
+    "image": "/public/r4.png"
   },
   {
     "name": "Pride World City",
     "price": "₹52,00,000",
     "detail": "Charholi Budruk, Near Dhanori, Pune, Maharashtra 412105",
-    "image": "/r2.png"
+    "image": "/public/r2.png"
   },
   {
     "name": "Lodha Belmondo",
     "price": "₹95,00,000",
     "detail": "Mumbai-Pune Expressway, Gahunje, Pune, Maharashtra 412101",
-    "image": "/r3.png"
+    "image": "/public/r3.png"
   }
 ]
